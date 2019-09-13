@@ -1,0 +1,78 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: 
+   Date:   
+   
+   Filename: lake_styles.css
+
+*/
+@charset "utf-8";
+@import "layout.css";
+
+/* Strunctural Styles */
+html{
+   background-color: rgb(175, 175, 90)
+}
+header nav{
+   /* the purple bar at the top */
+   background-color: rgb(126, 74, 126);
+   padding-top: 5px;
+   padding-right: 10px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+}
+footer{
+   background-color: grey;
+   text-align: center;
+   color: white;
+   padding-top: 4px;
+   padding-bottom: 6px;
+}
+
+ /* Body Section Styles */
+body section#leftcol{
+   background-color: white;
+}
+body section#leftcol p{
+   /* main article on left */
+   padding-top: 5px;
+   padding-right: 10px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+}
+body section#leftcol aside:first-of-type{
+   /* red box on the bottom left */
+   background-color: rgb(250, 91, 91);
+   padding-bottom: 5px;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+body section#leftcol aside{
+   /* brown box on the bottom right */
+   background-color: rgb(211, 174, 104);
+   padding-bottom: 5px;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+body section#leftcol aside h1{
+   text-align: center;
+}
+body section#rightcol{
+   /* purple column on the left */
+   background-color: rgb(221, 179, 221); 
+   padding-top: 7px;
+   padding-right: 20px;
+   padding-bottom: 7px;
+   padding-left: 20px;
+}
+
+/* Header Nav Styles */
+header nav a:visited, header nav a:link{
+   color:white;
+   text-decoration: none;
+   font-size: 1.5em;
+}
