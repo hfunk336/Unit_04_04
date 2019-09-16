@@ -12,6 +12,18 @@
 */
 @charset "utf-8";
 @import "layout.css";
+@font-face{
+   font-family:Champagne;
+   src: url(cac_champagne.ttf) format('ttf'),
+   url(cac_champagne.woff) format('woff'),
+   url(cac_champagne.woff2) format('woff2');
+}
+@font-face{
+   font-family:Dobkin;
+   src: url(DobkinPlain.ttf) format('ttf'),
+   url(DobkinPlain.woff) format('woff'),
+   url(DobkinPlain.woff2) format('woff2');
+}
 
 /* Strunctural Styles */
 html{
@@ -24,8 +36,10 @@ header nav{
    padding-right: 10px;
    padding-bottom: 5px;
    padding-left: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 footer{
+   /* the grey bar at the bottom */
    background-color: grey;
    text-align: center;
    color: white;
@@ -34,8 +48,20 @@ footer{
 }
 
  /* Body Section Styles */
+ /* Left Column styles */
 body section#leftcol{
+   /* changs the background color for the main article and the
+   font used */
    background-color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body section#leftcol>h1{
+   /* Changes Welcome to be larger and different font */
+   font-family: Champagne, sans-serif;
+   font-size: 4em;
+   font-weight: none;
+   margin: 0px;
+   padding-left: 5px;
 }
 body section#leftcol p{
    /* main article on left */
@@ -50,6 +76,7 @@ body section#leftcol aside:first-of-type{
    padding-bottom: 5px;
    padding-right: 8px;
    padding-left: 8px;
+   line-height: 30px;
 }
 body section#leftcol aside{
    /* brown box on the bottom right */
@@ -61,18 +88,60 @@ body section#leftcol aside{
 body section#leftcol aside h1{
    text-align: center;
 }
+/* Centers Notes and Upcoming Events in the bottom boxes */
+
+/* Right Column styles */
+body{
+   background-color: rgb(221, 179, 221);
+}
 body section#rightcol{
    /* purple column on the left */
-   background-color: rgb(221, 179, 221); 
    padding-top: 7px;
    padding-right: 20px;
    padding-bottom: 7px;
    padding-left: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body section#rightcol nav>h2{
+   font-family: Dobkin, sans-serif;
+   font-size: 2em;
+   font-weight: none;
+}
+body section#rightcol nav ul{
+   /* removes the bullet points from the nav on the right */
+   list-style-type: none;
+}
+body section#rightcol nav ul a:link, a:visited{
+   /* changes the color of the links and removes the underline */
+   color: rgb(131, 131, 67);
+   text-decoration: none;
+}
+body section#rightcol nav ul a:hover, a:active{
+   /* changes the font and highlights the text a darker color
+   when you hover over with your mouse */
+   color: rgb(175, 175, 90);   
+   background-color: rgb(151, 87, 151);
+}
+
+/* Blockquote Styles */
+body blockquote{
+   /* paragraph under the nav on the right side */
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+   'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: rgb(151, 87, 151);
+   font-size: 1.3em;
+   margin: 0px;
+   padding-top: 50px;
 }
 
 /* Header Nav Styles */
 header nav a:visited, header nav a:link{
+   /* changes text in the top nav bar to white */
    color:white;
    text-decoration: none;
-   font-size: 1.5em;
+   font-size: 1em;
+}
+header nav a:hover, a:active{
+   /* highlights */
+   background-color: rgb(68, 39, 68)
 }
